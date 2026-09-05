@@ -10,7 +10,7 @@
 
 - Python 3.9 或更高版本
 - 安装requirements.txt文件中要求的第三方库
-- 一个可用的 DeepSeek API Key,没有可以去官网申请
+- 一个可用的 DeepSeek API Key, 没有可以去官网申请
 
 ## 安装
 
@@ -18,24 +18,18 @@
 
 不要将 `.env` 提交到 Git 或分享给他人。
 
-## 使用
-
-```bash
-# 示例
-python main.py "Please translate this sentence."
-python main.py Please translate this sentence.
-```
-
 ## 配置终端别名
 
-为了在任意目录使用，可以在 `~/.zshrc` 或 `~/.bashrc` 中添加别名。请将路径替换为本项目的实际路径：
+为了在任意目录使用，可以在 `~/.zshrc` 或 `~/.bashrc` 中添加别名,如果使用了虚拟环境，请使用虚拟环境中的python解释器
 
 ```bash
-# 示例
-alias lingo='python /path/to/AI_translator/main.py'
+# 如果将项目放在 ~/shell_scripts 下,可以按如下配置,根据你使用的python解释器选一个
+# 如果放在其他路径下,按实际目录修改即可
+alias lingo='python $HOME/shell_scripts/AI_translator/main.py' # 使用系统python解释器
+alias lingo='$HOME/shell_scripts/AI_translator/.venv/bin/python $HOME/shell_scripts/AI_translator/main.py' # 使用虚拟环境python解释器
 ```
 
-重新打开终端，或执行对应的配置文件：
+重新打开终端, 或者执行对应的配置文件：
 
 ```bash
 source ~/.zshrc    # zsh
@@ -47,12 +41,6 @@ source ~/.zshrc    # zsh
 ```bash
 # 示例
 lingo "这是一段需要翻译的文字。"
-```
-
-如果使用了虚拟环境，建议把别名中的 `python` 替换为虚拟环境解释器的绝对路径：
-
-```bash
-alias lingo='/path/to/AI_translator/.venv/bin/python /path/to/AI_translator/main.py'
 ```
 
 ## 常见问题
