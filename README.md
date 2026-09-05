@@ -25,8 +25,8 @@
 ```bash
 # 如果将项目放在 ~/shell_scripts 下,可以按如下配置,根据你使用的python解释器选一个
 # 如果放在其他路径下,按实际目录修改即可
-alias lingo='python $HOME/shell_scripts/AI_translator/main.py' # 使用系统python解释器
-alias lingo='$HOME/shell_scripts/AI_translator/.venv/bin/python $HOME/shell_scripts/AI_translator/main.py' # 使用虚拟环境python解释器
+alias lingo="python $HOME/shell_scripts/AI_translator/main.py" # 使用系统python解释器
+alias lingo="$HOME/shell_scripts/AI_translator/.venv/bin/python $HOME/shell_scripts/AI_translator/main.py" # 使用虚拟环境python解释器
 ```
 
 重新打开终端, 或者执行对应的配置文件：
