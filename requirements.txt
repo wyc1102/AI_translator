@@ -1,0 +1,3 @@
+# 需要以下python第三方库
+openai
+python-dotenv
